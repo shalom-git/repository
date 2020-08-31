@@ -3,46 +3,58 @@ function menuBtn(x) {
     item.classList.toggle('active');
 }
 
+window.onscroll = function() {
+    document.getElementById('top-header1').classList.toggle('active', window.pageYOffset > 10);
+    document.getElementById('pointup').classList.toggle('active', window.pageYOffset > 1000);
+}
+
+
+
 $(document).ready(function(){
-    $('.main').click(function(){
-        const value = $(this).attr('data-filter');
-        if (value == 'android') {
-            $('.mainsub').not('.'+value).hide();
-            $('.mainsub').filter('.'+value).show('1000');
-            $('.main').hide();
-        }
-        if (value == 'apple') {
-            $('.mainsub').not('.'+value).hide();
-            $('.mainsub').filter('.'+value).show('1000');
-            $('.main').hide();
-        }
-        if (value == 'windows') {
-            $('.mainsub').not('.'+value).hide();
-            $('.mainsub').filter('.'+value).show('1000');
-            $('.main').hide();
-        }
-        if (value == 'blackberry') {
-            $('.mainsub').not('.'+value).hide();
-            $('.mainsub').filter('.'+value).show('1000');
-            $('.main').hide();
-        }
-    })
     
-    $('.back').click(function(){
-        $('.main').show('1000');
-        $('.mainsub').hide();
-    })
-    
-    $('.list').click(function() {
+    $('.android-pointer').click(function() {
         const value = $(this).attr('data-filter');
-        if (value == 'all android') {
-            $('.item').filter('.android').show('1000');
-            $('.item').not('.android').hide();
+        if(value == 'all') {
+            $('.android-item').show('100');
         }
         else {
-            $('.item').not('.' + value).hide();
-            $('.item').filter('.' + value).show('1000')
+            $('.android-item').filter('.' + value).show('1000');
+            $('.android-item').not('.' + value).hide()
         }
-        
     })
+    
+    $('.apple-pointer').click(function() {
+        const value = $(this).attr('data-filter');
+        if(value == 'all') {
+            $('.apple-item').show('100');
+        }
+        else {
+            $('.apple-item').filter('.' + value).show('1000');
+            $('.apple-item').not('.' + value).hide()
+        }
+    })
+    
+    $('.windows-pointer').click(function() {
+        const value = $(this).attr('data-filter');
+        if(value == 'all') {
+            $('.windows-item').show('100');
+        }
+        else {
+            $('.windows-item').filter('.' + value).show('1000');
+            $('.windows-item').not('.' + value).hide()
+        }
+    })
+    
+    $('.blackberry-pointer').click(function() {
+        const value = $(this).attr('data-filter');
+        if(value == 'all') {
+            $('.blackberry-item').show('100');
+        }
+        else {
+            $('.blackberry-item').filter('.' + value).show('1000');
+            $('.blackberry-item').not('.' + value).hide()
+        }
+    })
+    
+   
 })

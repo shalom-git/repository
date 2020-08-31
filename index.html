@@ -6,7 +6,35 @@
         <link rel = 'stylesheet' href = 'style.css'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
+    
     <body>
+        <div id = 'top-header1'>
+                
+                <div>
+                    <div id = 'logo'>logo</div>
+                    <div id = 'search-btn' onclick = 'menuBtn("btm-header")'>Search</div>
+                    <div id = 'header-details'>
+                        <ul>
+                            <li>About</li>
+                            <li>Latest</li>
+                            <li>Vedios</li>
+                            <li>Contact</li>
+                            <li>Cart</li>
+                            <li>Likes</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id = 'log-btn'>
+                    <div>SIGN IN</div>
+                    <div>LOG IN</div>
+                </div>
+                
+                <div id = 'menu-btn' onclick = 'menuBtn("menu")'>
+                    <img src = 'icons/menu.png'>
+                </div>
+            </div>
+        <div>
         <header>
 <!--  this is the header with the black background           -->
             <div id = 'top-header'>
@@ -32,7 +60,7 @@
                 </div>
                 
                 <div id = 'menu-btn' onclick = 'menuBtn("menu")'>
-                    <img src = 'menu.png'>
+                    <img src = 'icons/menu.png'>
                 </div>
             </div>
 <!--        this is the header with the white background-->
@@ -40,7 +68,7 @@
                 <form>
                     <input type = 'search' name = 'search' placeholder = 'Search'>
                     <button type = 'submit'>
-                        <img src = 'search.png'>
+                        <img src = 'icons/search.png'>
                     </button>
                 </form>
             </div>
@@ -62,24 +90,268 @@
             </div>
             <div id = 'slidebox'>
                 <div id = 'slide'>
-                    <img src = 'slide.jpg' id = 'slide-img'>
-                    <img src = 'slide1.jpg' id = 'slide-img'>
-                    <img src = 'slide2.jpg' id = 'slide-img'>
-                    <img src = 'slide3.jpg' id = 'slide-img'>
-                    <img src = 'slide4.jpg' id = 'slide-img'>
-                    <img src = 'slide.jpg' id = 'slide-img'>
+                    <img src = 'slides/slide.jpg' id = 'slide-img'>
+                    <img src = 'slides/slide1.jpg' id = 'slide-img'>
+                    <img src = 'slides/slide2.jpg' id = 'slide-img'>
+                    <img src = 'slides/slide3.jpg' id = 'slide-img'>
+                    <img src = 'slides/slide4.jpg' id = 'slide-img'>
+                    <img src = 'slides/slide.jpg' id = 'slide-img'>
                 </div>
             </div>
         </header>
         <section>
             <div id = 'categories'>
-                    
-            </div>
-            
-            <div id = 'category-items' class = 'cat-itm'>
-                
+                <div id = 'category-box'>
+                    <div class = 'content'>
+                        <h2>Category Name</h2>
+                        <div class = 'content-img'>
+                            <img src = 'icons/android.png'>
+                        </div>
+                        <b>Androids</b>
+                    </div>
+                    <div class = 'content'>
+                        <h2>Category Name</h2>
+                        <div class = 'content-img'>
+                            <img src = 'icons/apple.png'>
+                        </div>
+                        <b>Apple</b>
+                    </div>
+                    <div class = 'content'>
+                        <h2>Category Name</h2>
+                        <div class = 'content-img'>
+                            <img src = 'icons/windows.png'>
+                        </div>
+                        <b>Windows</b>
+                    </div>
+                    <div class = 'content'>
+                        <h2>Category Name</h2>
+                        <div class = 'content-img'>
+                            <img src = 'icons/blackberry.png'>
+                        </div>
+                        <b>Blackberry</b>
+                    </div>
+                    <div class = 'content'>
+                        <h2>Category Name</h2>
+                        <div class = 'content-img'>
+                            <img src = 'icons/bike.png'>
+                        </div>
+                        <b>Accessories</b>
+                    </div>
+                </div>
             </div>
         </section>
+        
+        <section id = 'android'>
+            <h2>Android</h2>
+            <div id = 'all-category'>
+                <ul>
+                    <li class = 'android-pointer' data-filter = 'all' tabindex = '1'>All</li>
+                    <li class = 'android-pointer' data-filter = 'phone' tabindex = '1'>Phones</li>
+                    <li class = 'android-pointer' data-filter = 'tablet' tabindex = '1'>Tablets</li>
+                    <li class = 'android-pointer' data-filter = 'accessory' tabindex = '1'>Accessories</li>
+                </ul>
+            </div>
+            
+            <div id = 'android-items'>
+                <img class = 'android-item phone' src = 'items/item1.jpg'>
+                <img class = 'android-item phone' src = 'items/6.jpg'>
+                <img class = 'android-item phone' src = 'items/item2.jpg'>
+                <img class = 'android-item phone' src = 'items/3.jpg'>
+                <img class = 'android-item tablet' src = 'items/10.jpg'>
+                <img class = 'android-item tablet' src = 'items/8.jpg'>
+                <img class = 'android-item tablet' src = 'items/5.jpg'>
+                <img class = 'android-item tablet' src = 'items/6.jpg'>
+                <img class = 'android-item tablet' src = 'items/6.jpg'>
+                <img class = 'android-item tablet' src = 'items/6.jpg'>
+                <img class = 'android-item accessory' src = 'items/7.jpg'>
+                <img class = 'android-item accessory' src = 'items/8.jpg'>
+                <img class = 'android-item accessory' src = 'items/9.jpg'>
+                <img class = 'android-item accessory' src = 'items/10.jpg'>
+                <img class = 'android-item accessory' src = 'items/10.jpg'>
+                <img class = 'android-item accessory' src = 'items/10.jpg'>
+            </div>
+        </section>
+        
+        <section id = 'android'>
+            <h2>Apple</h2>
+            <div id = 'all-category'>
+                <ul>
+                    <li class = 'apple-pointer' data-filter = 'all'  tabindex = '1'>All</li>
+                    <li class = 'apple-pointer' data-filter = 'phone' tabindex = '1'>Phones</li>
+                    <li class = 'apple-pointer' data-filter = 'tablet' tabindex = '1'>Tablets</li>
+                    <li class = 'apple-pointer' data-filter = 'accessory' tabindex = '1'>Accessories</li>
+                </ul>
+            </div>
+            
+            <div id = 'android-items'>
+                <img class = 'apple-item phone' src = 'items/item1.jpg'>
+                <img class = 'apple-item phone' src = 'items/6.jpg'>
+                <img class = 'apple-item phone' src = 'items/item2.jpg'>
+                <img class = 'apple-item phone' src = 'items/3.jpg'>
+                <img class = 'apple-item tablet' src = 'items/10.jpg'>
+                <img class = 'apple-item tablet' src = 'items/8.jpg'>
+                <img class = 'apple-item tablet' src = 'items/5.jpg'>
+                <img class = 'apple-item tablet' src = 'items/6.jpg'>
+                <img class = 'apple-item tablet' src = 'items/6.jpg'>
+                <img class = 'apple-item tablet' src = 'items/6.jpg'>
+                <img class = 'apple-item accessory' src = 'items/7.jpg'>
+                <img class = 'apple-item accessory' src = 'items/8.jpg'>
+                <img class = 'apple-item accessory' src = 'items/9.jpg'>
+                <img class = 'apple-item accessory' src = 'items/10.jpg'>
+                <img class = 'apple-item accessory' src = 'items/10.jpg'>
+                <img class = 'apple-item accessory' src = 'items/10.jpg'>
+            </div>
+        </section>
+        
+        <section id = 'android'>
+            <h2>Windows</h2>
+            <div id = 'all-category'>
+                <ul>
+                    <li class = 'windows-pointer' data-filter = 'all' tabindex = '1'>All</li>
+                    <li class = 'windows-pointer' data-filter = 'phone' tabindex = '1'>Phones</li>
+                    <li class = 'windows-pointer' data-filter = 'tablet' tabindex = '1'>Tablets</li>
+                    <li class = 'windows-pointer' data-filter = 'accessory' tabindex = '1'>Accessories</li>
+                </ul>
+            </div>
+            
+            <div id = 'android-items'>
+                <img class = 'windows-item phone' src = 'items/item1.jpg'>
+                <img class = 'windows-item phone' src = 'items/6.jpg'>
+                <img class = 'windows-item phone' src = 'items/item2.jpg'>
+                <img class = 'windows-item phone' src = 'items/3.jpg'>
+                <img class = 'windows-item tablet' src = 'items/10.jpg'>
+                <img class = 'windows-item tablet' src = 'items/8.jpg'>
+                <img class = 'windows-item tablet' src = 'items/5.jpg'>
+                <img class = 'windows-item tablet' src = 'items/6.jpg'>
+                <img class = 'windows-item tablet' src = 'items/6.jpg'>
+                <img class = 'windows-item tablet' src = 'items/6.jpg'>
+                <img class = 'windows-item accessory' src = 'items/7.jpg'>
+                <img class = 'windows-item accessory' src = 'items/8.jpg'>
+                <img class = 'windows-item accessory' src = 'items/9.jpg'>
+                <img class = 'windows-item accessory' src = 'items/10.jpg'>
+                <img class = 'windows-item accessory' src = 'items/10.jpg'>
+                <img class = 'windows-item accessory' src = 'items/10.jpg'>
+            </div>
+        </section>
+        
+        <section id = 'android'>
+            <h2>Blackberry</h2>
+            <div id = 'all-category'>
+                <ul>
+                    <li class = 'blackberry-pointer' data-filter = 'all' tabindex = '1'>All</li>
+                    <li class = 'blackberry-pointer' data-filter = 'phone' tabindex = '1'>Phones</li>
+                    <li class = 'blackberry-pointer' data-filter = 'tablet' tabindex = '1'>Tablets</li>
+                    <li class = 'blackberry-pointer' data-filter = 'accessory' tabindex = '1'>Accessories</li>
+                </ul>
+            </div>
+            
+            <div id = 'android-items'>
+                <img class = 'blackberry-item phone' src = 'items/item1.jpg'>
+                <img class = 'blackberry-item phone' src = 'items/6.jpg'>
+                <img class = 'blackberry-item phone' src = 'items/item2.jpg'>
+                <img class = 'blackberry-item phone' src = 'items/3.jpg'>
+                <img class = 'blackberry-item tablet' src = 'items/10.jpg'>
+                <img class = 'blackberry-item tablet' src = 'items/8.jpg'>
+                <img class = 'blackberry-item tablet' src = 'items/5.jpg'>
+                <img class = 'blackberry-item tablet' src = 'items/6.jpg'>
+                <img class = 'blackberry-item tablet' src = 'items/6.jpg'>
+                <img class = 'blackberry-item tablet' src = 'items/6.jpg'>
+                <img class = 'blackberry-item accessory' src = 'items/7.jpg'>
+                <img class = 'blackberry-item accessory' src = 'items/8.jpg'>
+                <img class = 'blackberry-item accessory' src = 'items/9.jpg'>
+                <img class = 'blackberry-item accessory' src = 'items/10.jpg'>
+                <img class = 'blackberry-item accessory' src = 'items/10.jpg'>
+                <img class = 'blackberry-item accessory' src = 'items/10.jpg'>
+            </div>
+        </section>
+            
+        <section>
+            <article>
+                <h3>Online Shopping with ShopName Ghana</h3>
+                <p>Shopping online has gotten easier over the years with ShopName. Our platform makes shopping fun with amazing deals, jaw-dropping reduction in the prices of the items as well as special discount offers which occurs from time to time. Irrespective of your class, we provide you with products that align with your budget. Our online store is updated from time to time so you can stay up to date with the latest fashion trend. Explore your favourite fashion designers like  Adidas, Puma, Ralph Lauren, Nike and more in our catalogue of top fashion collections. Step out looking classy and elegant with ShopName Fashion and style which ranges from women's shoes, fashion accessories, underwear, Jackets, office wears, jeans, sunglasses, shorts, sneakers as well as men's shoes, office wears, fashion accessories and so on. You can also look through our African and traditional section, we have beautiful attires that you could choose from for your next event. Are you thinking of a makeover for your home and you don't have time to visit the mall to buy your home furniture and appliances from your favourite brands? Look no further - ShopName provides you with classy pieces of furniture, kitchen appliances, refrigerators, televisions, air conditioners, washing machines to suit your personal style, we provide you with the latest trend of items to choose from to give your home that perfect glam. Sometimes, making the best choices for your food and groceries can be extremely problematic, especially when you are on a budget, not to worry, ShopName has got you covered. We offer you a wide range of beverages, cereals, drinks, fresh and packed foods that equal to your expenditure plan. The World's most anticipated football tournament is here again. If you are looking for a high budget smartphone, you can choose from our collection of top brands like iPhone, Samsung, HTC, if you would also like to get an affordable smartphone, we have brands like Xiaomi, Tecno, Infinix and so on to fit your budget. Explore our wide range of best selling smartphones including iPhone 8, iPhone X, Samsung S9, Samsung Note 9 and a lot more.</p><br>
+
+                <h3>Why Shop On ShopName</h3>
+                <p>If you want an amazing shopping experience then ShopName is the right place to be. We provide you with a flexible payment option, you can choose the cash on delivery payment mode, ShopNamePay or debit card. We are committed to giving you a 100% customer satisfaction, this is why you are assured of getting a smooth, effortless and easy shopping experience. Also, download the ShopName mobile app for easy and fast access to the latest deals, flash sales, discount sales, clearance sales and much more. All you need to do is shop for your favourite items on our site and it would be delivered to your preferred location. Start shopping today!</p><br>
+            </article>
+        </section>
+        </div>
+        <a href = '#top-header'><img id = 'pointup' src = 'icons/upload.png'></a>
+        <footer>
+            <div id = 'first'>
+                <div id = 'logo'>Logo</div>
+                
+                <div id = 'subscribe-box'>
+                    <h3>New to ShopName</h3>
+                    <p>Subscribe to our newsletter to get updates on our latest offers!</p>
+                    <form>
+                        <input type = 'email' name = 'email' placeholder = 'Enter E-mail Address'>
+                        <input type = 'submit' name = 'gender' value = 'MALE'>
+                        <input type = 'submit' name = 'gender' value = "FEMALE">
+                    </form>
+                </div>
+                
+                <div id = 'download-box'>
+                    <div id = 'playstore'>
+                        <img src = 'icons/playstore.png'>
+                        <p>GET IT ON<br><span>Google Play</span></p>
+                    </div>
+                    <div id = 'applestore'>
+                        <img src = 'icons/applestore.png'>
+                        <p>Download on the<br><span>App Store</span></p>
+                    </div>
+                </div>
+            </div>
+            <div id = 'footer-content'>
+                <div>
+                    <h3>LET US HELP YOU</h3>
+                    <li>Help Center</li>
+                    <li>Contact Us</li>
+                    <li>How to buy on ShopName</li>
+                    <li>Delivery timelines and fees</li>
+                    <li>Return Policy</li>
+                    <li>Corporate and Bulk Purchases</li>
+                    <li>Report a Product</li>
+                </div>
+                <div>
+                    <h3>ABOUT ShopName GHANA</h3>
+                    <li>About Us</li>
+                    <li>Testimonials</li>
+                    <li>ShopName Careers</li>
+                    <li>Terms and Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Stay informes about Corona Virus</li>
+                    <li>Stay Safe</li>
+                    <li>ShopName Anniversary</li>
+                </div>
+                <div>
+                    <h3>MAKE MONEY WITH ShopName</h3>
+                    <li>Sell on ShopName</li>
+                    <li>Service Charges</li>
+                    <li>Become a Sales Consultant</li>
+                    <li>Become a Logistics Service Partner</li>
+                </div>
+                <div></div>
+            </div>
+            <div id = 'social-media'>
+                <div id = 'social-icons'>
+                    <h3>JOIN US ON</h3>
+                    <div id = 'icon-box'>
+                        <img src = 'icons/facebook.png'>
+                        <img src = 'icons/twitter.png'>
+                        <img src = 'icons/instagram.png'>
+                    </div>
+                </div>
+                <div id = 'payment-icons'>
+                    <h3>PAYMENT METHODS</h3>
+                    <div id = 'icon-box'>
+                        <img src = 'icons/mastercard.png' style = 'filter: invert()'>
+                        <img src = 'icons/visa.png'>
+                        <img src = 'icons/money.png'>
+                    </div>
+                </div>
+            </div>
+            <div id = 'copyright'>Copyright © 2008 shop Inc. All rights reserved</div>
+        </footer>
     </body>
     <script src = 'java.js'></script>
 </html>

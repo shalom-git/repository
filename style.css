@@ -4,6 +4,204 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    background: url('backGs/body1.jpg');
+}
+
+body > div {
+    width: 100%;
+    overflow-x: hidden;
+    background: white;
+    box-shadow: 0 0 10px;
+    transform: scaleX(0.9);
+    margin-top: 3rem;
+}
+
+header {
+    width: 100%;
+}
+
+article {
+    margin: 4rem;
+    line-height: 1.4;
+    word-spacing: 1.8;
+    margin-top: 10rem;
+    font-size: 18;
+}
+
+footer {
+    background: #141414;
+    color: white;
+    margin-top: 4rem;
+    width: 100%;
+}
+
+footer > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+footer #logo {
+    font-family: 'Lobster', cursive;
+    font-size: 400%;
+    align-self: center;
+    margin-bottom: 5%;
+}
+
+#subscribe-box {
+    line-height: 2;
+    margin-bottom: 5%;
+    align-self: center;
+}
+
+#subscribe-box h3 {
+    font-weight: bolder;
+    font-size: 160%
+}
+
+#subscribe-box form {
+    display: flex;
+}
+
+#subscribe-box form input {
+    margin: 3;
+    outline: none;
+    border: none;
+    padding: .8rem;
+    border-radius: .2rem;
+    font-weight: bolder;
+}
+
+#subscribe-box form input[type = "email"] {
+    width: 100%;
+    padding: 5;
+}
+
+#subscribe-box form input[type = "email"]::placeholder {
+    background: url('mail.png');
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+    height: 25px;
+    font-size: 80%;
+}
+
+#subscribe-box form input[type = "submit"] {
+    background: transparent;
+    color: white;
+    border: 3px solid white;
+    width: 20%;
+}
+
+#download-box {
+    display: flex;
+    align-self: center;
+    white-space: nowrap;
+    margin-bottom: 5%;
+}
+
+#download-box #playstore, #applestore {
+    display: flex;
+    margin: 2px;
+    border: 3px solid white;
+    border-radius: .5rem;
+    padding: 3px;
+}
+
+#download-box #playstore p, #applestore p {
+    font-size: 60%;
+}
+
+#download-box #playstore span, #applestore span {
+    font-size: 190%;
+}
+
+#download-box #playstore img, #applestore img {
+    width: 28px;
+    height: 28px;
+    align-self: center;
+}
+
+#applestore img {
+    filter: invert();
+}
+
+#footer-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer-content div {
+    line-height: .7;
+}
+
+#footer-content h3 {
+    line-height: 3;
+    font-size: 75%
+}
+
+#footer-content li {
+    list-style: none;
+    margin-top: 5%;
+}
+
+#social-media {
+    margin-top: 6%;
+}
+
+#social-media h3 {
+    font-size: 75%;
+    text-align: center;
+}
+
+#social-icons img {
+    margin-right: 1rem;
+}
+
+#payment-icons img {
+    margin-right: 1rem;
+    width: 30px;
+    height: 30px;
+}
+
+#copyright {
+    margin-top: 6%;
+    word-spacing: 10;
+    font-style: italic;
+    color: grey;
+}
+
+#top-header1 {
+    background: black;
+    color: rgb(245, 227, 255);
+    display: none;
+    justify-content: space-between;
+    font-family: 'Lobster', cursive;
+}
+
+#top-header1.active {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: -50;
+    filter: invert(4);
+    z-index: 3;
+}
+
+#top-header1 > div {
+    display: flex;
+    margin: .5rem;
 }
 
 #top-header {
@@ -12,6 +210,14 @@
     display: flex;
     justify-content: space-between;
     font-family: 'Lobster', cursive;
+}
+
+#top-header.active {
+    position: fixed;
+    width: 100%;
+    top: -50;
+    filter: invert(1);
+    z-index: 3;
 }
 
 #top-header > div {
@@ -40,6 +246,22 @@
     animation: animate 5s infinite;
 }
 
+#top-header1 #logo {
+    align-self: center;
+    color: white;
+    margin: 0 1.5rem 0 0;
+    font-size: 150%;
+}
+
+#top-header1 #search-btn {
+    align-self: center;
+    cursor: pointer;
+    color: white;
+    margin: 0 1.5rem 0 0;
+    transition: 5s;
+    animation: animate 5s infinite;
+}
+
 
 #header-details {
     align-self: center;
@@ -54,14 +276,12 @@
 #log-btn > div {
     margin: 0 1rem;
     padding: .4rem;
-    background: #101020;
-    border-radius: 1rem;
-    box-shadow: inset 0 0 1px gold, 0 0 2px white;
+    border-radius: .5rem;
+    box-shadow: inset 0 0 1px;
 }
 
 #menu {
     display: none;
-    position: absolute;
 }
 
 #btm-header {
@@ -140,43 +360,129 @@
     opacity: 0.3;
 }
 
+
 #categories {
-    box-shadow: 0 0 2px;
-    border-radius: 2rem;
-    display: inline-block;
-    margin: 2rem 0 0 0;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 6rem;
 }
 
-#categories ul{
-    
+#categories .content {
+    width: 12rem;
+    height: 65px;
+    box-shadow: 0 0 2px grey; 
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-}
-
-#categories ul li {
-    box-shadow: 0 0 3px ;
-    border-radius: 1rem;
-    padding: .5rem;
+    justify-content: space-around;
+    padding: .3rem;
     margin: .5rem;
-    cursor: pointer;
+    margin-right: 2rem;
+    transition: .2s;
 }
 
-#category-items {
+#categories .content:hover {
+    transform: scale(1.1);
+}
+    
+#category-box {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
 }
 
-#category-items img {
-    width: 200px;
-    height: 200px;
+#categories h2 {
+    font-size: 60%;
+    font-weight: bolder;
+    margin: 5px;
+    display: none;
+}
+    
+#categories .content b {
+     align-self: center;
 }
 
-.sub1.active {
-    background: blue;
+#categories .content-img {
+    width: 40%;
+    align-self: center;
+}
+    
+#categories .content-img img {
+    width: 80%;
 }
 
+#android {
+    display: grid;
+    position: relative;
+    margin-top: 10rem;
+}
 
+#android h2 {
+    text-align: center;
+    font-size: 50;
+    display: inline-block;
+}
+
+#all-category {
+    width: 100%;
+    margin-top: 4rem;
+}
+
+#all-category ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+    list-style: none;
+    margin-left: 5px;
+}
+
+#all-category ul li {
+    align-self: center;
+    box-shadow: 0 0 2px grey;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin-right: .9rem;
+    margin: 5px;
+    padding: .5rem;
+    text-align: center;
+}
+
+#all-category ul li:focus {
+    background: deepskyblue;
+    outline: none;
+}
+
+#android-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 98%;
+    margin-top: 4rem;
+}
+
+#android-items img {
+    width: 8rem;
+    margin: 5px;
+}
+
+#pointup {
+    position: fixed;
+    bottom: 200;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px grey;
+    right: 0;
+    margin: 2rem;
+    visibility: hidden;
+    width: 30px;
+    height: 30px;
+    transition: 1s;
+}
+
+#pointup.active {
+    visibility: visible;
+}
 
 @media only screen and (max-width: 795px) {
     #top-header #log-btn {
@@ -187,7 +493,10 @@
         margin: .1rem;
         display: block;
         position:relative;
-        
+    }
+    
+    #menu-btn img {
+        filter: invert(1);
     }
     
     #header-details ul {
@@ -203,8 +512,8 @@
         width: 0;
         overflow: hidden;
         transition: .5s;
-        position:absolute;
-        z-index: 1;
+        position: fixed;
+        z-index: 4;
     }
     
     #menu.active {
@@ -223,6 +532,11 @@
         }
     
     @media only screen and (max-width: 330px) {
+        
+        article {
+            font-size: 90%;
+        }
+        
         #menu.active {
             width: 75%;
         }
@@ -245,6 +559,7 @@
         margin-left: 2rem;
         font-size: 90%;
         font-family: cursive;
+        cursor: pointer;
     }
     
     #menu ul li:hover::before {
@@ -260,6 +575,7 @@
     
     #log-btn {
         display: inline-block;
+        cursor: pointer;
         border-top: 1px solid grey;
     }
     
@@ -271,6 +587,54 @@
     
     #btm-header form {
         width: 60%;
+    }
+    
+    #categories {
+        margin: 1rem;
+    }
+    
+    #categories .content {
+        box-shadow: non;
+        display: flex;
+        flex-direction: column;
+        width: 9rem;
+        padding: 1rem;
+        margin: 1rem;
+        justify-content: center;
+    }
+    
+    #category-box {
+        justify-content: center;
+        width: 80%;
+        margin-left: 1rem;
+    }
+    
+    #categories .content h2 {
+        display: block;
+        text-align: center;
+    }
+    
+    #categories .content b {
+        display: none;
+        width: 0px;
+    }
+    
+    #top-header1.active {
+        display: none;
+    }
+    
+    #footer-content {
+        justify-content: center;
+    }
+    
+    #footer-content div {
+        line-height: .7;
+        margin-top: 5%;
+        margin: 1rem;
+    }
+    
+    #first > div {
+        margin-top: 3rem;
     }
     
 }
@@ -287,15 +651,15 @@
 @keyframes slide {
     0%{left: 0%}
     10%{left: 0%}
-    15%{left: -100%}
+    11%{left: -100%}
     25%{left: -100%}
-    35%{left: -200%}
+    27%{left: -200%}
     45%{left: -200%}
-    55%{left: -300%}
+    47%{left: -300%}
     65%{left: -300%}
-    75%{left: -400%}
+    67%{left: -400%}
     85%{left: -400%}
-    95%{left: -500%}
+    87%{left: -500%}
     100%{left: -500%}
 }
 
