@@ -23,8 +23,6 @@ body > div {
     overflow-x: hidden;
     background: white;
     box-shadow: 0 0 10px;
-    transform: scaleX(0.9);
-    margin-top: 3rem;
 }
 
 header {
@@ -42,7 +40,6 @@ article {
 footer {
     background: #141414;
     color: white;
-    margin-top: 4rem;
     width: 100%;
 }
 
@@ -297,7 +294,7 @@ footer #logo {
 }
 
 #btm-header.active {
-    height: 1%;
+    height: 12%;
     background: white;
 }
 
@@ -489,6 +486,11 @@ footer #logo {
         display: none;
     }
     
+    #categories .content-img {
+        width: 20%;
+        align-self: center;
+    }
+    
     #menu-btn, #menu-btn img {
         margin: .1rem;
         display: block;
@@ -530,11 +532,14 @@ footer #logo {
     #slidebox {
             height: 50%;
         }
+    article {
+            font-size: 60%;
+        }
     
     @media only screen and (max-width: 330px) {
         
         article {
-            font-size: 90%;
+            font-size: 50%;
         }
         
         #menu.active {
