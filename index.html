@@ -1,0 +1,85 @@
+<html lang = 'en'>
+    <head>
+        <title>site</title>
+        <meta charset = 'utf-8'>
+        <meta name =  'viewport' content = 'width=device-width, initial-scale = 1'>
+        <link rel = 'stylesheet' href = 'style.css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+<!--  this is the header with the black background           -->
+            <div id = 'top-header'>
+                
+                <div>
+                    <div id = 'logo'>logo</div>
+                    <div id = 'search-btn' onclick = 'menuBtn("btm-header")'>Search</div>
+                    <div id = 'header-details'>
+                        <ul>
+                            <li>About</li>
+                            <li>Latest</li>
+                            <li>Vedios</li>
+                            <li>Contact</li>
+                            <li>Cart</li>
+                            <li>Likes</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id = 'log-btn'>
+                    <div>SIGN IN</div>
+                    <div>LOG IN</div>
+                </div>
+                
+                <div id = 'menu-btn' onclick = 'menuBtn("menu")'>
+                    <img src = 'menu.png'>
+                </div>
+            </div>
+<!--        this is the header with the white background-->
+            <div id = 'btm-header'>
+                <form>
+                    <input type = 'search' name = 'search' placeholder = 'Search'>
+                    <button type = 'submit'>
+                        <img src = 'search.png'>
+                    </button>
+                </form>
+            </div>
+<!--            this is the menu that shows on devices with smaller screen shrink screen size to observe-->
+            <div id = 'menu'>
+                <div id = 'logo'>logo</div>
+                <ul>
+                    <li>About</li>
+                    <li>Latest</li>
+                    <li>Vedios</li>
+                    <li>Contact</li>
+                    <li>Cart</li>
+                    <li>Likes</li>
+                 </ul>
+                <div id = 'log-btn'>
+                    <div>SIGN IN</div>
+                    <div>LOG IN</div>
+                </div>
+            </div>
+            <div id = 'slidebox'>
+                <div id = 'slide'>
+                    <img src = 'slide.jpg' id = 'slide-img'>
+                    <img src = 'slide1.jpg' id = 'slide-img'>
+                    <img src = 'slide2.jpg' id = 'slide-img'>
+                    <img src = 'slide3.jpg' id = 'slide-img'>
+                    <img src = 'slide4.jpg' id = 'slide-img'>
+                    <img src = 'slide.jpg' id = 'slide-img'>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div id = 'categories'>
+                    
+            </div>
+            
+            <div id = 'category-items' class = 'cat-itm'>
+                
+            </div>
+        </section>
+    </body>
+    <script src = 'java.js'></script>
+</html>
