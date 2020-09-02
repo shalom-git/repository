@@ -71,6 +71,10 @@ footer #logo {
     margin-bottom: 5%;
 }
 
+#scroller-left img {
+    transform: rotateY(180deg)
+}
+
 #subscribe-box {
     line-height: 2;
     margin-bottom: 5%;
@@ -465,10 +469,11 @@ footer #logo {
     border-radius: 3rem;
     opacity: 1;
     width: 40px;
-    background: lightgrey;
     overflow: hidden;
     animation: live 2s infinite;
     transition: .4s;
+    background: orange;
+    filter: invert();
 }
 
 #item-scroller > div img {
@@ -706,9 +711,9 @@ footer #logo {
 }
 
 @keyframes live {
-    0%{transform: scale(.9); opacity: .5}
+    0%{transform: scale(.9); opacity: .9}
     50%{transform: scale(1); opacity: 1}
-    100%{transform: scale(.9); opacity: .5}
+    100%{transform: scale(.9); opacity: .9}
 }
 
 
