@@ -9,32 +9,6 @@
     </head>
     
     <body>
-        <div id = 'top-header1'>
-                
-                <div>
-                    <div id = 'logo'>logo</div>
-                    <a href = '#top-header' style = 'color: white; text-decoration: none;' id = 'search-btn' onclick = 'menuBtn("btm-header")'><div >Search</div></a>
-                    <div id = 'header-details'>
-                        <ul>
-                            <li>About</li>
-                            <li>Latest</li>
-                            <li>Vedios</li>
-                            <li>Contact</li>
-                            <li>Cart</li>
-                            <li>Likes</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div id = 'log-btn'>
-                    <div>SIGN IN</div>
-                    <div>LOG IN</div>
-                </div>
-                
-                <div id = 'menu-btn' onclick = 'menuBtn("menu")'>
-                    <img src = 'icons/menu.png'>
-                </div>
-            </div>
         <div>
         <header>
 <!--  this is the header with the black background           -->
@@ -143,7 +117,6 @@
         </section>
         
         <section id = 'android'>
-            <h2>Android</h2>
             <div id = 'all-category'>
                 <ul>
                     <li class = 'android-pointer' data-filter = 'all' tabindex = '1'>All</li>
@@ -153,7 +126,9 @@
                 </ul>
             </div>
             
-            <div id = 'android-items'>
+            <h2>Android</h2>
+            <div id = 'android-items android' class = 'android-items'>
+    
                 <img class = 'android-item phone' src = 'items/item1.jpg'>
                 <img class = 'android-item phone' src = 'items/6.jpg'>
                 <img class = 'android-item phone' src = 'items/item2.jpg'>
@@ -171,10 +146,15 @@
                 <img class = 'android-item accessory' src = 'items/10.jpg'>
                 <img class = 'android-item accessory' src = 'items/10.jpg'>
             </div>
+            
+            <div id = 'item-scroller'>
+                <div id = 'scroller-left' onclick = 'scroller("left", "android")'><img src = 'icons/back.png'></div>
+                 <div id = 'scroller-right' onclick = 'scroller("right", "android")'><img src = 'icons/next.png'></div>
+            </div>
         </section>
         
         <section id = 'android'>
-            <h2>Apple</h2>
+            
             <div id = 'all-category'>
                 <ul>
                     <li class = 'apple-pointer' data-filter = 'all'  tabindex = '1'>All</li>
@@ -184,7 +164,8 @@
                 </ul>
             </div>
             
-            <div id = 'android-items'>
+            <h2>Apple</h2>
+            <div id = 'android-items apple' class = 'android-items'>
                 <img class = 'apple-item phone' src = 'items/item1.jpg'>
                 <img class = 'apple-item phone' src = 'items/6.jpg'>
                 <img class = 'apple-item phone' src = 'items/item2.jpg'>
@@ -202,10 +183,15 @@
                 <img class = 'apple-item accessory' src = 'items/10.jpg'>
                 <img class = 'apple-item accessory' src = 'items/10.jpg'>
             </div>
+            
+            <div id = 'item-scroller'>
+                <div id = 'scroller-left' onclick = 'scroller("left", "apple")'><img src = 'icons/back.png'></div>
+                 <div id = 'scroller-right' onclick = 'scroller("right", "apple")'><img src = 'icons/next.png'></div>
+            </div>
         </section>
         
         <section id = 'android'>
-            <h2>Windows</h2>
+            
             <div id = 'all-category'>
                 <ul>
                     <li class = 'windows-pointer' data-filter = 'all' tabindex = '1'>All</li>
@@ -215,7 +201,8 @@
                 </ul>
             </div>
             
-            <div id = 'android-items'>
+            <h2>Windows</h2>
+            <div id = 'android-items windows' class = 'android-items'>
                 <img class = 'windows-item phone' src = 'items/item1.jpg'>
                 <img class = 'windows-item phone' src = 'items/6.jpg'>
                 <img class = 'windows-item phone' src = 'items/item2.jpg'>
@@ -233,10 +220,15 @@
                 <img class = 'windows-item accessory' src = 'items/10.jpg'>
                 <img class = 'windows-item accessory' src = 'items/10.jpg'>
             </div>
+            
+            <div id = 'item-scroller'>
+                <div id = 'scroller-left' onclick = 'scroller("left", "windows")'><img src = 'icons/back.png'></div>
+                 <div id = 'scroller-right' onclick = 'scroller("right", "windows")'><img src = 'icons/next.png'></div>
+            </div>
         </section>
         
         <section id = 'android'>
-            <h2>Blackberry</h2>
+            
             <div id = 'all-category'>
                 <ul>
                     <li class = 'blackberry-pointer' data-filter = 'all' tabindex = '1'>All</li>
@@ -246,7 +238,8 @@
                 </ul>
             </div>
             
-            <div id = 'android-items'>
+            <h2>Blackberry</h2>
+            <div id = 'android-items blackberry' class = 'android-items'>
                 <img class = 'blackberry-item phone' src = 'items/item1.jpg'>
                 <img class = 'blackberry-item phone' src = 'items/6.jpg'>
                 <img class = 'blackberry-item phone' src = 'items/item2.jpg'>
@@ -264,9 +257,14 @@
                 <img class = 'blackberry-item accessory' src = 'items/10.jpg'>
                 <img class = 'blackberry-item accessory' src = 'items/10.jpg'>
             </div>
+            
+            <div id = 'item-scroller'>
+                <div id = 'scroller-left' onclick = 'scroller("left", "blackberry")'><img src = 'icons/back.png'></div>
+                 <div id = 'scroller-right' onclick = 'scroller("right", "blackberry")'><img src = 'icons/next.png'></div>
+            </div>
         </section>
             
-        <section>
+        <section id = 'article'>
             <article>
                 <h3>Online Shopping with ShopName Ghana</h3>
                 <p>Shopping online has gotten easier over the years with ShopName. Our platform makes shopping fun with amazing deals, jaw-dropping reduction in the prices of the items as well as special discount offers which occurs from time to time. Irrespective of your class, we provide you with products that align with your budget. Our online store is updated from time to time so you can stay up to date with the latest fashion trend. Explore your favourite fashion designers like  Adidas, Puma, Ralph Lauren, Nike and more in our catalogue of top fashion collections. Step out looking classy and elegant with ShopName Fashion and style which ranges from women's shoes, fashion accessories, underwear, Jackets, office wears, jeans, sunglasses, shorts, sneakers as well as men's shoes, office wears, fashion accessories and so on. You can also look through our African and traditional section, we have beautiful attires that you could choose from for your next event. Are you thinking of a makeover for your home and you don't have time to visit the mall to buy your home furniture and appliances from your favourite brands? Look no further - ShopName provides you with classy pieces of furniture, kitchen appliances, refrigerators, televisions, air conditioners, washing machines to suit your personal style, we provide you with the latest trend of items to choose from to give your home that perfect glam. Sometimes, making the best choices for your food and groceries can be extremely problematic, especially when you are on a budget, not to worry, ShopName has got you covered. We offer you a wide range of beverages, cereals, drinks, fresh and packed foods that equal to your expenditure plan. The World's most anticipated football tournament is here again. If you are looking for a high budget smartphone, you can choose from our collection of top brands like iPhone, Samsung, HTC, if you would also like to get an affordable smartphone, we have brands like Xiaomi, Tecno, Infinix and so on to fit your budget. Explore our wide range of best selling smartphones including iPhone 8, iPhone X, Samsung S9, Samsung Note 9 and a lot more.</p><br>
@@ -277,7 +275,9 @@
         </section>
         </div>
         <a href = '#top-header'><img id = 'pointup' src = 'icons/upload.png'></a>
-        <footer>
+        
+    </body>
+    <footer>
             <div id = 'first'>
                 <div id = 'logo'>Logo</div>
                 
@@ -353,7 +353,5 @@
             </div>
             <div id = 'copyright'>Copyright © 2008 shop Inc. All rights reserved</div>
         </footer>
-    </body>
-    <script src = 'java.js'></script>
 </html>
-
+<script src = 'java.js'></script>

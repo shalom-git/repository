@@ -3,12 +3,21 @@ function menuBtn(x) {
     item.classList.toggle('active');
 }
 
+function scroller(x, y) {
+    let obj = document.getElementById('android-items ' + y);
+    if (x == 'right') {
+        obj.scrollLeft += 200;
+    }
+    else {
+        obj.scrollLeft -= 200;
+    }
+}
+
+
 window.onscroll = function() {
     document.getElementById('top-header1').classList.toggle('active', window.pageYOffset > 10);
     document.getElementById('pointup').classList.toggle('active', window.pageYOffset > 1000);
 }
-
-
 
 $(document).ready(function(){
     
