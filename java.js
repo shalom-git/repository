@@ -1,6 +1,9 @@
 function menuBtn(x) {
     const item = document.getElementById(x);
     item.classList.toggle('active');
+    
+    const item1 = document.getElementById('menu-btn');
+    item1.classList.toggle('active');
 }
 
 function scroller(x, y) {

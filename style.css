@@ -27,8 +27,6 @@ body > div {
 
 header {
     width: 100%;
-    background: black;
-    border-bottom: 3px solid black;
 }
 
 article {
@@ -88,6 +86,7 @@ footer #logo {
 
 #subscribe-box form {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #subscribe-box form input {
@@ -101,7 +100,6 @@ footer #logo {
 
 #subscribe-box form input[type = "email"] {
     width: 100%;
-    padding: 5;
 }
 
 #subscribe-box form input[type = "email"]::placeholder {
@@ -116,11 +114,11 @@ footer #logo {
     background: transparent;
     color: white;
     border: 3px solid white;
-    width: 20%;
 }
 
 #download-box {
     display: flex;
+    flex-wrap: wrap;
     align-self: center;
     white-space: nowrap;
     margin-bottom: 5%;
@@ -210,7 +208,7 @@ footer #logo {
 #top-header.active {
     position: fixed;
     width: 100%;
-    z-index: 5;
+    z-index: 102;
 }
 
 #top-header > div {
@@ -278,6 +276,7 @@ footer #logo {
     background: white;
     color: black;
     align-items: center;
+    z-index: 101;
 }
 
 #btm-header form {
@@ -311,7 +310,6 @@ footer #logo {
     height: 80%;
     overflow: hidden;
     position: relative;
-    margin: .0 .1rem 0 .1rem;
 }
 
 #slide {
@@ -323,6 +321,9 @@ footer #logo {
 
 #slide img {
     width: 16.67%;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
 }
 
 #left-btn{
@@ -510,20 +511,32 @@ footer #logo {
         display: none;
     }
     
+    #article span {
+            display: none;
+        }
+    
     #categories .content-img {
         width: 20%;
         align-self: center;
     }
     
-    #menu-btn, #menu-btn img {
+    #menu-btn {
         margin: .1rem;
         display: block;
         position:relative;
+        background: url(icons/menu.png);
+        background-repeat: no-repeat;
+        width: 38px;
+        filter: invert();
+        transition: .5s;
     }
     
-    #menu-btn img {
-        filter: invert(1);
+    #menu-btn.active {
+        background: url(icons/close.png);
+        background-repeat: no-repeat;
+        height: 34px;
     }
+    
     
     #header-details ul {
         display: none;
@@ -540,7 +553,7 @@ footer #logo {
         transition: .5s;
         top: 0;
         position: fixed;
-        z-index: 4;
+        z-index: 105;
     }
     
     #menu.active {
@@ -561,9 +574,6 @@ footer #logo {
             font-size: 60%;
         }
     
-        #article span {
-            display: none;
-        }
     
     @media only screen and (max-width: 283px) {
         
