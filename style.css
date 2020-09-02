@@ -28,7 +28,7 @@ body > div {
 header {
     width: 100%;
     background: black;
-    border-bottom: 5px solid black;
+    border-bottom: 3px solid black;
 }
 
 article {
@@ -203,17 +203,14 @@ footer #logo {
     display: flex;
     justify-content: space-between;
     font-family: 'Lobster', cursive;
-    position: fixed;
-    z-index: 5;
+    position: relative;
     width: 100%;
 }
 
 #top-header.active {
     position: fixed;
     width: 100%;
-    top: -50;
-    filter: invert(1);
-    z-index: 3;
+    z-index: 5;
 }
 
 #top-header > div {
@@ -314,7 +311,7 @@ footer #logo {
     height: 80%;
     overflow: hidden;
     position: relative;
-    margin: .0rem .3rem 0rem .3rem;
+    margin: .0 .1rem 0 .1rem;
 }
 
 #slide {
@@ -326,7 +323,6 @@ footer #logo {
 
 #slide img {
     width: 16.67%;
-    height: 90%;
 }
 
 #left-btn{
@@ -506,6 +502,7 @@ footer #logo {
 
 #pointup.active {
     visibility: visible;
+    z-index: 100;
 }
 
 @media only screen and (max-width: 795px) {
@@ -685,9 +682,6 @@ footer #logo {
         width: 0px;
     }
     
-    #top-header1.active {
-        display: none;
-    }
     
     #footer-content {
         justify-content: center;

@@ -14,10 +14,10 @@ function scroller(x, y) {
 }
 
 
-/*window.onscroll = function() {
-    document.getElementById('top-header1').classList.toggle('active', window.pageYOffset > 10);
+window.onscroll = function() {
+    document.getElementById('top-header').classList.toggle('active', window.pageYOffset > 5);
     document.getElementById('pointup').classList.toggle('active', window.pageYOffset > 1000);
-} */
+} 
 
 $(document).ready(function(){
     
