@@ -35,7 +35,6 @@ article {
     margin: 1rem 4rem 1rem 4rem;
     line-height: 1.4;
     word-spacing: 1.8;
-    font-size: 13.5;
 }
 
 #article {
@@ -44,6 +43,7 @@ article {
     border-radius: .5rem;
     box-shadow: 0 0 5px;
     overflow-x: hidden;
+    font-size: 140%;
 }
 
 
@@ -564,7 +564,11 @@ footer #logo {
             font-size: 60%;
         }
     
-    @media only screen and (max-width: 330px) {
+        #article span {
+            display: none;
+        }
+    
+    @media only screen and (max-width: 283px) {
         
         article {
             font-size: 50%;
@@ -581,6 +585,28 @@ footer #logo {
         #slidebox {
             height: 40%
         }
+        
+        #all-category  ul {
+            font-size: 70%;
+        }
+        
+    }
+    @media only screen and (max-width: 360px) {
+        
+        #android {
+            height: 70%
+        }
+        
+        #all-category {
+            font-size: 70%;
+        }
+        
+        article {
+            margin: 1rem;
+            font-size: 80%;
+        }
+        
+        
         
     }
     
@@ -678,8 +704,6 @@ footer #logo {
     }
     
 }
-
-
 
 
 
